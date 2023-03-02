@@ -6,33 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fix the Web with CSS!</title>
   </head>
-  <body>
+  <body style="margin-left: 10em; margin-right: 10em">
     <h1>Fixing the Web with CSS</h1>
-    <ul>
-      <p>Usablity</p>
-      <li>Learnablity</li>
-      <li>efficiency</li>
-      <li>safety</li>
-    </ul>
-    <p>Graphic Design</p>
-    <ul>
-      <li>alignment</li>
-      <li>reptition</li>
-      <li>contrast</li>
-    </ul>
-    <p>CSS code</p>
-    <code>
-      .btn ,.btn--active{ border:0.05em solid black; margin:3px; color:white; }
-      .hero .address-display{ font-size:15px; color:black; } .nav__logo a{
-      color: white ; } .hero .btn{ background-color:#ed1c24 !important;
-      width:15em; } .nav{ background-color:#ed1c24 ; color:white;
-      padding-bottom:10px; } .nav_links{ color:black ; } .nav_logo{ margin:20px;
-      } .row{ margin-right:10px; margin-left:10px; } .address-display{
-      color:white; } .section__body, .section__title,.row{ color:white;
-      text-align:center; padding:10px; } .section__body:pagehover { color:
-      #1c1b1b; text-decoration: none;} body { margin: 0; font-size: 18px;
-      font-family: arial, sans-serif; line-height: 1.7; background-color: #000;
-      }
-    </code>
+    <p>
+      The webpage I was trying to update improve is:
+      https://www.riversidepizzacambridge.com/
+    </p>
+    <div>
+      <div>
+        <h2 style="margin-left: 1em">Tabel Of Content</h2>
+      </div>
+      <div style="margin: 2em 5em 5em; padding: 2px">
+        <h3>Usablity</h3>
+        <ul>
+          <li>Learnablity</li>
+          <li>efficiency</li>
+          <li>safety</li>
+        </ul>
+        <h3>Graphic Design</h3>
+
+        <!-- <ul>
+          <li>Code</li>
+        </ul> -->
+      </div>
+    </div>
+    <div style="margin-left: 3em; margin-right: 10em">
+      <h3>Usablity</h3>
+      <div>
+        <h4>Learnablity</h4>
+        <p>
+          To improve the Learnablity of the website. I used CSS display mode and
+          hid some repetitive elements from the home page. Besides making the
+          website readable, I also made it easier for the users to find the food
+          items on the home page without scrolling down. Since it's a pizza shop
+          website, users come here to order food, so providing the food items at
+          the top increases the learnability of the website.
+        </p>
+
+        <h4>Efficiency</h4>
+        <p>
+          I created an order here button that will scroll up and down along the
+          user's movement everywhere in the home and about us page. It helps
+          reduce the time the user spends finding the order here button.
+        </p>
+        <h4>Safety</h4>
+        <p>
+          I planned to add a safety feature that brings the user back home from
+          the menu or discount pages. Unfortunately, once I get to the menu or
+          discount pages, I cannot right-click to find the options to inspect
+          elements. But my idea was to create a button redirecting users to the
+          home page.
+        </p>
+        <h4>Graphics Design</h4>
+        <p>
+          I applied the principle of Graphics alignment throughout the page. I
+          chose to align all the texts to the center. I also changed the
+          background image to improve contrast and to make it more appealing.
+          The color choice was another contrast technique I used to create
+          consistency throughout the page. I assumed the color I chose was
+          associated with the company's theme. Repetition is another graphic
+          design principle I incorporated into my account. I used the round
+          image display method and center text alignment in the website's home
+          page and about us section. In addition, I also used the background
+          effect on both pages(about and home).
+        </p>
+      </div>
+
+      <h4>CSS code</h4>
+      <pre>
+      img {
+				border-radius: 50%;
+			}
+			p{
+					color:white;
+			}
+			h1{
+					color:white;
+			}
+			.banner__cta{
+				 
+				position: fixed;
+				top: calc(30% + 2px);
+			
+			}
+			.section__body{
+					background-color:black ;
+			}
+			
+			.hero__body, .hero__image{
+					display:none;
+			}
+			
+			
+			.btn ,.btn--active{
+					border:0.05em solid black;
+					margin:3px;
+					color:white;
+			}
+			.hero .address-display{
+					font-size:15px;
+					color:black;
+			}
+			
+			.nav__logo a{
+					color: white ;
+			}
+			.hero .btn{
+					 display:hide !important;
+					background-color:#ed1c24 !important;
+					width:15em;
+			}
+			
+			.nav{
+					 background-color:#ed1c24 ;
+					 color:white;
+					 padding-bottom:10px;
+			}
+			.nav_links{
+							color:black ; 
+			}
+			.nav_logo{
+					margin:20px;
+			}
+			.row{
+					margin-right:10px;
+					margin-left:10px;
+			}
+			.address-display{
+					color:white;
+			}
+			.section__body, .section__title,.row{
+					color:white;
+					text-align:center;
+					padding:10px;
+			}
+			.section__body:pagehover {
+				 color: #1c1b1b;
+					text-decoration: none;}
+			
+			body {
+				margin: 0;
+				font-size: 18px;
+				font-family: arial, sans-serif;
+				line-height: 1.7;
+				background-color: #000;
+					
+					background: linear-gradient(to bottom, black 0%, rgba(4,5,7,0) 100%), url('https://www.riversidepizzacambridge.com/files/images/riversidepizzacambridge.jpg') no-repeat center center fixed;
+				background-size: cover;
+			}
+						
+    </pre
+      >
+    </div>
   </body>
 </html>
